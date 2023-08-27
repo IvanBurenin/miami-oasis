@@ -1,0 +1,82 @@
+.aboutTabs{
+    margin-top: 30px;
+    display: flex;
+    gap: 12px;
+    overflow: overlay;
+}
+
+.tab{
+    padding: 5px 15px;
+    border: 2px solid var(--pink);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all .2s;
+
+    color: var(--black);
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 122.9%; 
+}
+
+.tab:hover{
+    background-color: var(--pink);
+    color: white;
+}
+
+.tabItem{
+    margin-top: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 15px;
+    width: 600px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.tabItem::before{
+    content: '';
+    background-image: url(/miami-oasis/home-images/about-gradient.png);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-repeat: no-repeat;
+    z-index: 1;
+    border-radius: 15px;
+    background-size: cover;
+}
+
+.tabText{
+    margin-left: 25px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 542px;
+    color: #FFF;
+    font-size: 15px;
+    line-height: 134.9%; 
+    position: relative;
+    z-index: 5;
+}
+
+.active{
+    background-color: var(--pink);
+    color: white;
+}
+
+@media(max-width: 830px){
+    .tabItem{
+        width: 100%;
+    }
+}
+
+@media(max-width: 700px){
+    .aboutTabs{
+        padding-bottom: 10px;
+    }
+}

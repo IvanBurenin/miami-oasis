@@ -1,0 +1,65 @@
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after, .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    padding: 25px 25px !important;
+    border-radius: 100px !important;
+    background-color: rgba(177, 0, 160, 0.5);
+    width: 60px !important;
+    height: 60px !important;
+    background-repeat: no-repeat !important;
+    background-position: center;
+    transition: background-color .1s;
+}
+
+.swiper-button-prev{
+    background-image: url(/miami-oasis/home-images/sliders/arrow-left.svg) !important;
+}
+
+.swiper-button-next{
+    background-image: url(/miami-oasis/home-images/sliders/arrow-right.svg) !important;
+}
+
+.swiper-button-disabled{
+    opacity: 1.0 !important;
+}
+
+.swiper-button-disabled.swiper-button-next,
+.swiper-button-disabled.swiper-button-prev{
+    background-color: rgba(177, 0, 160, 0.3) !important;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+    background-color: rgba(177, 0, 160, 0.7);
+}
+
+.swiper-pagination-bullet{
+    width: 56px;
+    height: 5px;
+    background-color: #57044F;
+    border-radius: 15px;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: var(--pink);
+}
+
+@media(max-width: 700px){
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none;
+    }
+    .swiper-pagination{
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        padding: 10px;
+        border-radius: 15px;
+        margin: 0 auto;
+    }
+}

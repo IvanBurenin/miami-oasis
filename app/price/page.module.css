@@ -1,0 +1,272 @@
+.top{
+    margin-top: 160px;
+}
+
+.welcome{
+    max-width: 514px;
+    position: relative;
+}
+
+.welcomeIcon{
+    position: absolute;
+    top: -30px;
+    right: 65px;
+}
+
+.topText{
+    margin-top: 50px;
+}
+
+.form{
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.margin{
+    margin-top: 40px;
+}
+
+.formContainer{
+    margin: 0 auto;
+    padding: 15px auto;
+    max-width: 100%;
+}
+
+.formItems{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.chooseItem{
+    margin-top: 20px;
+    padding: 0 15px;
+}
+
+.formItem, .chooseItem{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #DEDEDE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formQuestion{
+    display: flex;
+    align-items: center;
+    width: 750px;
+}
+
+.formQuestion span{
+    color: var(--pink);
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.questions{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    width: 520px;
+    overflow: overlay;
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.question:hover .numbers{
+    color: var(--pink)
+}
+
+.numbers{
+    transition: all .2s;
+    font-variant-numeric: lining-nums proportional-nums;
+}
+
+.postscriptum{
+    width: 350px;
+    color: #8C8C8C;
+    font-size: 12px;
+}
+
+.chooseItem{
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.items{
+    padding-bottom: 30px;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    overflow: overlay;
+}
+
+.item{
+    position: relative;
+    cursor: pointer;
+}
+
+.itemImg{
+    width: 443px;
+    height: 310px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all .1s;
+    border: 2px solid transparent;
+}
+
+.raitings{
+    position: absolute;
+    bottom: 75px;
+    left: 25px;
+    display: flex;
+    gap: 5px;
+}
+
+.itemText{
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    transition: all .2s;
+}
+
+.bottomBtn{
+    margin-top: 30px;
+}
+
+.input, .itemInput {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.fakeInput{
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--pink);
+    border-radius: 100px;
+    transition: all .2s;
+    background-color: transparent;
+}
+
+.input:checked + .fakeInput{
+    background-color: var(--pink);
+}
+
+.itemInput:checked + .itemImg{
+    border: 2px solid var(--pink);
+}
+
+.item:hover .itemText{
+    color: var(--pink);
+}
+
+.down{
+    padding: 0 15px;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5); 
+    z-index: 1050;
+    opacity: 0; 
+    -webkit-transition: opacity 200ms ease-in; 
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; 
+    pointer-events: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalDialog {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+}
+
+.modalContent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 0.3rem;
+    outline: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modalInner{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.modalOpened{
+    opacity: 1;
+	pointer-events: auto;
+    overflow-y: auto;
+}
+
+.modalText{
+    text-align: center;
+}
+
+@media(max-width: 1200px){
+    .formItem{
+        flex-direction: column;
+        align-items: baseline;
+        margin: 0 0 !important;
+        max-width: 100% !important;
+    }
+    .formQuestion{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .questions{
+        margin-left: 0;
+        width: 100%;
+    }
+    .postscriptum{
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 600px) {
+    .welcomeIcon{
+        display: none;
+    }
+}
+
+@media(max-width: 530px) {
+    .itemText{
+        font-size: 14px;
+    }
+    .itemImg{
+        width: 90vw;
+    }
+}

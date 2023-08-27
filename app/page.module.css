@@ -1,0 +1,283 @@
+.top{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topInner{
+    margin: 0 auto;
+    padding-top: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    max-width: 815px;
+    gap: 20px;
+}
+
+.topTitle{
+    color: var(--black);
+    font-family: Comfortaa;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.about{
+    margin-top: 85px;
+}
+
+.aboutInner{
+    display: flex;
+    justify-content: space-between
+}
+
+.aboutLeft{
+    width: 600px;
+    height: 100;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
+
+.aboutImg{
+    border-radius: 15px;
+    object-fit: cover;
+    width: 472px;
+}
+
+.slider{
+    margin-top: 200px;
+}
+
+.sliderTitle{
+    text-align: center;
+}
+
+.adventure{
+    margin-top: 200px;
+    width: 100%;
+    height: 715px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.adventureContainer{
+    height: 100%;
+}
+
+.adventureInner{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.adventureUp{
+    padding: 18px;
+    background-color: white;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.adventureBtn{
+    color: white;
+}
+
+.adventureText{
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 720px;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+    text-align: center;
+}
+
+.kitchen{
+    margin-top: 200px;
+}
+
+.kitchenInner{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.kitchenLeft{
+    width: 600px;
+}
+
+.kitchenImg{
+    width: 472px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sport{
+    margin-top: 200px;
+}
+
+.sportInner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sportLeft{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sportText{
+    margin-top: 30px;
+}
+
+.sportImages{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 15px;
+}
+
+.sportImg{
+    width: 300px;
+    height: 194px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.sportImg:nth-child(1){
+    border-radius: 15px 0 0 0;
+}
+
+.sportImg:nth-child(2){
+    border-radius: 0 15px 0 0;
+}
+
+.sportImg:nth-child(3){
+    border-radius: 0 0 0 15px;
+}
+
+.sportImg:nth-child(4){
+    border-radius: 0 0 15px 0;
+}
+
+.sportBigImg{
+    margin-left: 50px;
+    object-fit: cover;
+}
+
+.bottomBtn{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.end{
+    margin-top: 100px;
+    width: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 1150px){
+    .aboutImg{
+        width: 30vw;
+    }
+    .sportLeft{
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .sportBigImg{
+        display: none;
+    }
+    .sportImages{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 15px;
+        margin: 70px auto 0;
+        gap: 40px;
+    }
+    .sportImg{
+        width: 45vw;
+    }
+    .bottomBtn{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 950px){
+    .aboutImg{
+        width: 20vw;
+    }
+    .kitchenImg{
+        width: 40vw;
+    }
+}
+
+@media(max-width: 830px){
+    .topTitle{
+        font-size: 36px;
+    }
+    .aboutLeft{
+        width: 100%;
+    }
+    .aboutImg{
+        display: none;
+    }
+    .adventure{
+        height: 50vh;
+    }
+}
+
+@media(max-width: 700px){
+    .kitchenLeft{
+        width: 100%;
+    }
+    .kitchenInner{
+        flex-direction: column;
+    }
+    .kitchenImg{
+        width: 100%;
+        height: 20vh;
+        object-position: top;
+    }
+}
+
+@media(max-width: 600px){
+    .adventureBtn{
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .topTitle{
+        font-size: 30px;
+    }
+    .sportImages{
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .sportImg{
+        width: 100%;
+        border-radius: 15px !important;
+    }
+}
+
+@media(max-width: 400px){
+    .topInner{
+        padding-top: 190px;
+    }
+    .topTitle, .topBtn, .topText{
+        color: white;
+    }
+    .adventure{
+        height: 100vh !important;
+    }
+}

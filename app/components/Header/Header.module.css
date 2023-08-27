@@ -1,0 +1,166 @@
+.header{
+    width: 100%;
+    position: fixed;
+    background-color: #E1E1E1;
+    z-index: 1000;
+}
+
+.headerInner{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+}
+
+.headerBtn{
+    padding: 15px 15px !important;
+    font-size: 15px !important;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.menuBtn{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 25px;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+}
+
+.btnLine{
+    width: 100% !important;
+    background-color: var(--pink);
+    height: 3px !important;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.menuItem a{
+    color: #A80B99;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+.menuItem a:hover{
+    color: #eb2dd8;
+}
+
+.menuActive .menu{
+    transform: translateY(0) !important;
+}
+
+.btnAdaptive{
+    display: none;
+    color: white !important;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    cursor: pointer;
+}
+
+.userAdaptive{
+    display: none;
+}
+
+.userBtn{
+    padding: 8px;
+    background-color: var(--pink);
+    border-radius: 100px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.userText{
+    color: var(--pink);
+    font-size: 16px;
+    font-weight: 500;
+    transition: all .2s;
+}
+
+.user:hover .userText{
+    color: #eb2dd8;
+}
+
+@media(max-width: 1100px){
+    .menuBtn{
+        display: inline-flex;
+    }
+    .menu{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        background-color: #0A0A0A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transform: translateY(-105%);
+        transition: .3s ease;
+        height: 70vh;
+    }
+    .menuItem a{
+        color: white;
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 700px){
+    .headerBtn{
+        display: none !important;
+    }
+    .btnAdaptive{
+        display: flex;
+    }
+}
+
+@media(max-width: 500px){
+    .user{
+        display: none;
+    }
+    .userAdaptive{
+        display: flex;
+    }
+    .userText{
+        color: white;
+    }
+}
+
+@media(max-width: 500px){
+    .menu{
+        height: 100vh;
+    }
+    .menuItem a{
+        font-size: 20px;
+    }
+}

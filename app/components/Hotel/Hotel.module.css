@@ -1,0 +1,109 @@
+.hotelItem{
+    display: flex;
+}
+
+.hotelItem:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.hotelImages{
+    padding-left: 10px;
+    gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+}
+
+.hotelImg{
+    width: 440px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.hotelRight{
+    width: 540px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hotelTitle{
+    text-align: center;
+}
+
+.raitings{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.content{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 100%;
+}
+
+.down{
+    margin-top: 35px;
+    width: 100%;
+}
+
+.down a{
+    display: inline-block;
+}
+
+.down button{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media(max-width: 1300px){
+    .hotelItem{
+        margin: 0 auto;
+        flex-direction: column-reverse;
+        max-width: 1000px;
+    }
+    .hotelItem:nth-child(even){
+        flex-direction: column-reverse;
+    }
+    .hotelImages{
+        margin: 40px auto 0;
+        padding-left: 0;
+        justify-content: space-between;
+    }
+    .hotelRight{
+        width: 100%;
+        margin-left: 0;
+    }
+    .down{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1000px){
+    .hotelRight{
+        width: 75vw;
+        margin: 0 auto;
+    }
+    .hotelImages{
+        justify-content: center;
+    }
+    .hotelImg{
+        width: 35vw;
+    }
+}
+
+@media(max-width: 700px){
+    .hotelImages{
+        flex-direction: column;
+    }
+    .hotelImg{
+        width: 100%;
+    }
+}
