@@ -40,7 +40,7 @@
 
 .tabItem::before{
     content: '';
-    background-image: url(/miami-oasis/home-images/about-gradient.png);
+    background-image: url('/miami-oasis/home-images/about-gradient.png');
     position: absolute;
     left: 0;
     width: 100%;
