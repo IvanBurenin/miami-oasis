@@ -15,11 +15,11 @@
 }
 
 .swiper-button-prev{
-    background-image: url(./miami-oasis/home-images/sliders/arrow-left.svg) !important;
+    background-image: url('./miami-oasis/home-images/sliders/arrow-left.svg') !important;
 }
 
 .swiper-button-next{
-    background-image: url(./miami-oasis/home-images/sliders/arrow-right.svg) !important;
+    background-image: url('./miami-oasis/home-images/sliders/arrow-right.svg') !important;
 }
 
 .swiper-button-disabled{
