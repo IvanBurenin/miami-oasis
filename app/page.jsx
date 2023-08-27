@@ -15,7 +15,7 @@ export const metadata = {
 export default function MiamiHome() {
     return(
         <>
-            <section className={styles.top} style={{backgroundImage: `url("/miami-oasis/home-images/top-bg.jpg")`}}>
+            <section className={styles.top} style={{backgroundImage: `url("./miami-oasis/home-images/top-bg.jpg")`}}>
                 <div className={mainStyles.container}>
                     <div className={styles.topInner}>
                         <h1 className={styles.topTitle}>Погружение в магию Майами</h1>
@@ -55,7 +55,7 @@ export default function MiamiHome() {
                 </div>
             </section>
 
-            <section className={styles.adventure} style={{backgroundImage:(`url(/miami-oasis/home-images/adventure-bg.jpg)`)}}>
+            <section className={styles.adventure} style={{backgroundImage:(`url(./miami-oasis/home-images/adventure-bg.jpg)`)}}>
                 <div className={`${mainStyles.container} ${styles.adventureContainer}`}>
                     <div className={styles.adventureInner}>
                         <div className={styles.adventureUp}>
@@ -113,7 +113,7 @@ export default function MiamiHome() {
                 </Link>
             </section>
 
-            <section className={styles.end} style={{backgroundImage: `url('/miami-oasis/home-images/end-bg.jpg')`}}></section>
+            <section className={styles.end} style={{backgroundImage: `url('./miami-oasis/home-images/end-bg.jpg')`}}></section>
         </>
     )
 }
