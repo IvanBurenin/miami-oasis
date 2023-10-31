@@ -10,7 +10,7 @@ Multi-page interactive website showcasing tourist services in Miami. Consists of
 * Leisure guide
 
 ## Powered by
-The website is created using NEXT.js with modal css styles. Carousels are built using SwiperJS. The website design was crafted using Figma.
+The website is created using NEXT.js with modal css styles. Carousels are built using SwiperJS. The website design was crafted using Figma
 
 ## Link
 ✅ https://ivanburenin.github.io/miami-oasis/
